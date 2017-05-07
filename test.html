@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test PopUp</title>
+    <style>
+        #element_to_pop_up {
+            background-color:#fff;
+            border-radius:15px;
+            color:#000;
+            display:none;
+            padding:20px;
+            min-width:400px;
+            min-height: 180px;
+        }
+        .b-close{
+            cursor:pointer;
+            position:absolute;
+            right:10px;
+            top:5px;
+        }
+
+    </style>
+</head>
+<body>
+<button id="my-button">POP IT UP</button>
+<div id="element_to_pop_up">
+    <a class="b-close">x</a>
+        Content of popup
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.bpopup.js"></script>
+<script type="text/javascript" src="testPopup.js"></script>
+</body>
+</html>
