@@ -17,7 +17,7 @@
         }
 
 		// OPTIONS
-        var o 				= $.extend({}, $.fn.bPopup.defaults, options);
+        var o 				= $.extend({}, $.fn.bPopup.defaults, options); //extend合并属性
 		
 		// HIDE SCROLLBAR?  
         if (!o.scrollBar)
@@ -54,7 +54,7 @@
             close();
         };
 		
-        $popup.reposition = function(animateSpeed) {
+        $popup.reposition = function(animateSpeed) { //Recalculates the center position of the popup. 重新计算popup的center位置
             reposition(animateSpeed);
         };
 
@@ -339,7 +339,7 @@
 	// DEFAULT VALUES
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////
     $.fn.bPopup.defaults = {
-          amsl: 			50
+          amsl: 			50    //Above Mean Sea Level. Vertical distance from the middle of the window, + = above, – = under.
         , appending: 		true
         , appendTo: 		'body'
 		, autoClose:		false
@@ -354,12 +354,12 @@
 		, iframeAttr: 		'scrolling="no" frameborder="0"'
 		, loadCallback: 	false
 		, loadData: 		false
-        , loadUrl: 			false
+        , loadUrl: 			false  //External page or selection to load in popup
         , modal: 			true
         , modalClose: 		true
         , modalColor: 		'#000'
-        , onClose: 			false
-        , onOpen: 			false
+        , onClose: 			false   //Event fires after the popup closes
+        , onOpen: 			false   //Event fires before the popup opens
         , opacity: 			0.7
         , position: 		['auto', 'auto'] // x, y,
         , positionStyle: 	'absolute'// absolute or fixed
